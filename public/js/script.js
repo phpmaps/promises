@@ -49,7 +49,7 @@ window.onload = () => {
     console.log("secondRun");
     return new Promise((resolve, reject) => {
       args.secondRun = "reject";
-      resolve(args);  //Rejecting here stops the promise chain
+      reject(args);  //Rejecting here stops the promise chain
     });
   }
 
